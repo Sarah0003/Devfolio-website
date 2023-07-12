@@ -1,0 +1,786 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --font-color-1: rgb(255, 255, 255);
+  --font-color-2: rgba(78, 78, 78, 1);
+  --font-color-3: RGB(30, 30, 30);
+
+  --header-color: RGB(30, 30, 30);
+  --font-main: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bg-color-1: #FFFFFF;
+  --bg-color-2: #F5F5F5;
+  --color-secondary: rgb(0, 120, 255);
+  --BAR-COLOR: rgb(13, 109, 253);
+}
+
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--font-color-1);
+  margin-right: 1.5rem;
+
+  transition: all 800ms;
+  position: relative;
+
+}
+
+
+.navbar-dark .navbar-nav .nav-link::before {
+  content: ' ';
+  border-bottom: 0.1rem solid white;
+  width: 4rem;
+  height: 0.1rem;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-1.5rem);
+  opacity: 0;
+  transition: all 1s;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover::before {
+  transform: translate(0rem);
+  opacity: 1;
+}
+
+
+
+
+
+/* Start header section */
+
+#home {
+  background-image: url(..//Images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+#home .header-items {
+  color: var(--font-color-1);
+  z-index: 2;
+}
+
+#home .header-items h1, p {
+
+  font-weight: 600;
+
+}
+
+#home .header-items p::after {
+  content: '|';
+  animation-name: typing;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes typing {
+  0% {
+    content: 'D|';
+  }
+
+  1% {
+    content: 'De|';
+  }
+
+  3% {
+    content: 'Des|';
+  }
+
+  4% {
+    content: 'Desi|';
+  }
+
+  5% {
+    content: 'Desig|';
+  }
+
+  6% {
+    content: 'Design|';
+  }
+
+  7% {
+    content: 'Designe|';
+  }
+
+  8% {
+    content: 'Designer|';
+  }
+
+  9% {
+    content: 'Designer|';
+  }
+
+  10% {
+    content: 'Designer|';
+  }
+
+  11% {
+    content: 'Designe|';
+  }
+
+  12% {
+    content: 'Design|';
+  }
+
+  13% {
+    content: 'Desig|';
+  }
+
+  14% {
+    content: 'Desi|';
+  }
+
+  15% {
+    content: 'Des|';
+  }
+
+  16% {
+    content: 'De|';
+  }
+
+  17% {
+    content: 'De|';
+  }
+
+  18% {
+    content: 'Dev|';
+  }
+
+  19% {
+    content: 'Deve|';
+  }
+
+  20% {
+    content: 'Devel|';
+  }
+
+  21% {
+    content: 'Develo|';
+  }
+
+  22% {
+    content: 'Develop|';
+  }
+
+  23% {
+    content: 'Develope|';
+  }
+
+  24% {
+    content: 'Developer|';
+  }
+
+  25% {
+    content: 'Developer|';
+  }
+
+  26% {
+    content: 'Developer|';
+  }
+
+  27% {
+    content: 'Develope|';
+  }
+
+  28% {
+    content: 'Develop|';
+  }
+
+  29% {
+    content: 'Develo|';
+  }
+
+  30% {
+    content: 'Devel|';
+  }
+
+  31% {
+    content: 'Deve|';
+  }
+
+  32% {
+    content: 'Dev|';
+  }
+
+  33% {
+    content: 'De|';
+  }
+
+  34% {
+    content: 'D|';
+  }
+
+  35% {
+    content: '|';
+  }
+
+  36% {
+    content: '|';
+  }
+
+  37% {
+    content: 'F|';
+  }
+
+  38% {
+    content: 'Fr|';
+  }
+
+  39% {
+    content: 'Fre|';
+  }
+
+  40% {
+    content: 'Free|';
+  }
+
+  41% {
+    content: 'Freel|';
+  }
+
+  42% {
+    content: 'Freela|';
+  }
+
+  43% {
+    content: 'Freelan|';
+  }
+
+  44% {
+    content: 'Freelanc|';
+  }
+
+  45% {
+    content: 'Freelance|';
+  }
+
+  46% {
+    content: 'Freelancer|';
+  }
+
+  47% {
+    content: 'Freelancer|';
+  }
+
+  48% {
+    content: 'Freelancer|';
+  }
+
+  49% {
+    content: 'Freelancer|';
+  }
+
+  50% {
+    content: 'Freelance|';
+  }
+
+  51% {
+    content: 'Freelanc|';
+  }
+
+  52% {
+    content: 'Freelan|';
+  }
+
+  53% {
+    content: 'Freela|';
+  }
+
+  54% {
+    content: 'Freel|';
+  }
+
+  55% {
+    content: 'Free|';
+  }
+
+  56% {
+    content: 'Fre|';
+  }
+
+  57% {
+    content: 'Fr|';
+  }
+
+  58% {
+    content: 'F|';
+  }
+
+  59% {
+    content: '|';
+  }
+
+  60% {
+    content: '|';
+  }
+
+  61% {
+    content: '|';
+  }
+
+  62% {
+    content: 'P|';
+  }
+
+  63% {
+    content: 'Ph|';
+  }
+
+  64% {
+    content: 'Pho|';
+  }
+
+  65% {
+    content: 'Phot|';
+  }
+
+  66% {
+    content: 'Photo|';
+  }
+
+  67% {
+    content: 'Photog|';
+  }
+
+  68% {
+    content: 'Photogr|';
+  }
+
+  69% {
+    content: 'Photogra|';
+  }
+
+  70% {
+    content: 'Photograp|';
+  }
+
+  71% {
+    content: 'Photograph|';
+  }
+
+  72% {
+    content: 'Photographe|';
+  }
+
+  73% {
+    content: 'Photographer|';
+  }
+
+  74% {
+    content: 'Photographer|';
+  }
+
+  75% {
+    content: 'Photographer|';
+  }
+
+  76% {
+    content: 'Photographe|';
+  }
+
+  77% {
+    content: 'Photograph|';
+  }
+
+  78% {
+    content: 'Photograp|';
+  }
+
+  79% {
+    content: 'Photogra|';
+  }
+
+  80% {
+    content: 'Photogr|';
+  }
+
+  81% {
+    content: 'Photog|';
+  }
+
+  82% {
+    content: 'Photo|';
+  }
+
+  83% {
+    content: 'Phot|';
+  }
+
+  84% {
+    content: 'Pho|';
+  }
+
+  85% {
+    content: 'Ph|';
+  }
+
+  86% {
+    content: 'P|';
+  }
+
+  87% {
+    content: '|';
+  }
+
+  100% {
+    content: '|';
+  }
+
+
+
+}
+
+/* End header section */
+
+/* Start About me section */
+
+#about {
+  background-color: var(--bg-color-2);
+}
+
+.about-info p {
+  font-family: var(--font-main);
+  color: var(--font-color-3);
+  font-size: 1rem;
+  font-size: 17.6px;
+  font-weight: 600;
+
+}
+
+.about-info .about-para {
+  font-family: var(--font-main);
+  color: var(--font-color-2);
+  font-size: 1rem;
+  font-weight: 400;
+
+}
+
+.progress {
+  color: var(--BAR-COLOR);
+  background-color: rgb(205, 225, 248);
+  height: 0.7rem;
+  border-radius: 0;
+}
+
+
+
+.about-title h5 {
+  color: var(--header-color);
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 32px;
+  position: relative;
+
+}
+
+
+
+.about-title h5::before {
+  content: ' ';
+  border-bottom: solid 0.2rem var(--color-secondary);
+
+  position: absolute;
+  height: 0.5rem;
+  width: 6rem;
+  top: 100%;
+}
+
+
+
+.about-content p {
+  font-family: var(--font-main);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+/* End About me section */
+
+
+/* Start Services  section */
+#services{
+  background-color: var(--bg-color-2);
+}
+.title{
+  position: relative;
+}
+
+
+.title h1{
+  font-family: var(--font-main);
+  font-size: 48px;
+  line-height:57.6px;
+  font-weight:700;
+}
+
+.title p{
+  font-family: var(--font-main);
+  color: var(--font-color-2);
+  font-size: 1rem;  
+  font-weight:400;
+}
+
+.title p::before{
+  content: '';
+  position: absolute;
+  border-bottom: 0.3rem  solid var(--color-secondary);
+  width: 2.5rem;
+  height: 1rem;
+  top: 100%;
+  left: 49%;
+}
+
+
+
+
+.service-box{
+  border-radius: 1rem;
+
+}
+.service-box-icon{
+  width: 5rem;
+  height: 5rem;
+  border: 0.8rem solid var(--color-secondary) ;
+  transition: all 500ms;
+}
+
+.service-box-icon:hover{
+  box-shadow: 0 0 0 0.5rem #cde1f8;
+  background-color: var(--color-secondary);
+}
+.service-box-icon:hover i{
+color: #FFFFFF;
+}
+
+.service-box-content h2{
+  font-family: var(--font-main);
+  font-size:22.4px;
+  padding:6.4px 0px;
+  font-weight:500;
+  color: var(--font-color-3);
+}
+.service-box-content p{
+  font-family: var(--font-main);
+  font-size:1rem;
+  padding:6.4px 0px;
+  font-weight:400;
+  color: var(--font-color-2);
+}
+/* End Services  section */
+
+/* Start Counter  section */
+
+.counter{
+  background-image: url(../Images/post-3.jpg);
+   background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+  /* height: 50vh; */
+ background-attachment: fixed; 
+}
+
+
+
+.count-icon{
+  width: 5rem;
+  height: 5rem;
+  border: 0.5rem solid rgb(205,225,248) ;
+}
+
+.counter-caption p{
+  font-family: var(--font-main);
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+.counter-caption .num {
+  font-size: 32px;
+  line-height: 48px;
+}
+/* End Counter  section */
+/* End Portifolio  section */
+
+.portifolio-icon{
+  width: 2.8rem;
+  height: 2.8rem;
+  border: 0.1rem solid var(--color-secondary) ;
+}
+.portifolio-icon i{
+ font-size: 1.5rem;
+}
+
+.card{
+  border-radius: 0;
+
+}
+
+.portifolio-img{
+  overflow: hidden;
+}
+
+.portifolio-img img{
+  transition: transform 1s ease-in-out;
+}
+
+.card-title h5{
+  font-size:19.2px;
+  font-weight:500;
+line-height:23.04px;
+}
+
+
+.card-title p{
+  font-size:12.8px;
+  font-weight:400;
+line-height:19.2px;
+}
+
+
+.card:hover img{
+transform: scale(1.5);}
+
+/* End Portifolio  section */
+
+/* Start Slider section */
+
+
+.slider{
+  background-image: url(../Images/overlay-bg.jpg);
+   background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+  height: 70vh;
+ background-attachment: fixed; 
+}
+
+.carousel-CAPTION p{
+  font-size:20px;
+    font-weight: 300;
+
+}
+.carousel-CAPTION h5{
+  
+  font-size:22.4px;
+  font-weight: 600;
+}
+.carousel-indicators [data-bs-target] {
+  height: 0.7rem;
+  width: 0.7rem;
+margin-top: 1rem;
+border-radius: 50%;
+}
+/* End Slider section */
+
+/* Start Blog section */
+
+.card1 .card-footer img{
+width: 1.5rem;
+height: 1.5rem;
+}
+
+.card1 a{
+text-decoration: none;
+color:var(--font-color-3);
+}
+
+.card1 p{
+  font-size: 1rem;
+  font-weight: 400;
+  }
+
+.card1 a:hover .card-title{
+  color: var(--color-secondary);
+}
+
+.card1 a:hover .para{
+  color: var(--color-secondary);
+}
+
+/* End Blog section */
+
+/* Sart Form section */
+
+#contact{
+  background-image: url(../Images/overlay-bg.jpg);
+   background-size:cover ;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative; 
+  /* height: 100vh; */
+ background-attachment: fixed; 
+ position: relative;
+
+}
+#contact .overlay2{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.form-control{
+  border-radius: 0;
+}
+
+.list-item li{
+  color: var(--color-secondary);
+}
+
+.icon-social{
+  border-radius: 0.5rem;
+
+} 
+.social-icon{
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid var(--color-secondary) ;
+  transition: all 500ms;
+}
+.social-icon i{
+  font-size: 1rem;
+  color: black;
+}
+.social-icon:hover{
+  box-shadow: 0 0 0 0.5rem #cde1f8;
+  background-color: var(--color-secondary);
+}
+.social-icon:hover i{
+color: #FFFFFF;
+}
+
+/* Start Footer section */
+#footer
+{
+  background-color: rgb(0,98,211);
+}
+/* End Footer section */
